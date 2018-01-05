@@ -1,0 +1,6 @@
+2,20,1
+0.21
+0.41
+1
+D:\pokemon-challenge\conv_combats.csv
+D:\pokemon-challenge\conv_combats.csv

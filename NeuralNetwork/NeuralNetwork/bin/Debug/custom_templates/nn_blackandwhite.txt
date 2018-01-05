@@ -1,0 +1,6 @@
+9,30,1
+0.21
+0.51
+1
+\Visual Basic\NeuralNetwork\NeuralNetwork\bin\Debug\data_blackandwhite\traindata.csv
+\Visual Basic\NeuralNetwork\NeuralNetwork\bin\Debug\data_blackandwhite\testdata.csv

@@ -1,0 +1,6 @@
+22,20,1
+0.12
+0.31
+1
+\mushrooms.csv
+\mushrooms_testing.csv
