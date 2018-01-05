@@ -87,6 +87,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomCreation.Designer.vb">
+      <DependentUpon>CustomCreation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCreation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Link.vb" />
     <Compile Include="Net.vb" />
     <Compile Include="NeuralNetwork.vb">
@@ -114,6 +120,9 @@
     <Compile Include="Neuron.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomCreation.resx">
+      <DependentUpon>CustomCreation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NeuralNetwork.resx">
       <DependentUpon>NeuralNetwork.vb</DependentUpon>
     </EmbeddedResource>

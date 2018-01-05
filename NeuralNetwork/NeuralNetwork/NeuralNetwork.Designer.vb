@@ -45,6 +45,10 @@ Partial Class NeuralNetwork
         Me.HiddenNeurons_Label = New System.Windows.Forms.Label()
         Me.HiddenNeurons_TrackBar = New System.Windows.Forms.TrackBar()
         Me.Reset_Button = New System.Windows.Forms.Button()
+        Me.SaveWeights_Button = New System.Windows.Forms.Button()
+        Me.LoadWeights_Button = New System.Windows.Forms.Button()
+        Me.CustomResults_ListBox = New System.Windows.Forms.ListBox()
+        Me.CreateCustom_Button = New System.Windows.Forms.Button()
         CType(Me.Result_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Epochs_TrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LearningRate_TrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -273,18 +277,60 @@ Partial Class NeuralNetwork
         'Reset_Button
         '
         Me.Reset_Button.Enabled = False
-        Me.Reset_Button.Location = New System.Drawing.Point(103, 306)
+        Me.Reset_Button.Location = New System.Drawing.Point(103, 294)
         Me.Reset_Button.Name = "Reset_Button"
         Me.Reset_Button.Size = New System.Drawing.Size(75, 23)
         Me.Reset_Button.TabIndex = 22
         Me.Reset_Button.Text = "Reset"
         Me.Reset_Button.UseVisualStyleBackColor = True
         '
+        'SaveWeights_Button
+        '
+        Me.SaveWeights_Button.Enabled = False
+        Me.SaveWeights_Button.Location = New System.Drawing.Point(298, 336)
+        Me.SaveWeights_Button.Name = "SaveWeights_Button"
+        Me.SaveWeights_Button.Size = New System.Drawing.Size(83, 23)
+        Me.SaveWeights_Button.TabIndex = 23
+        Me.SaveWeights_Button.Text = "Save Weights"
+        Me.SaveWeights_Button.UseVisualStyleBackColor = True
+        '
+        'LoadWeights_Button
+        '
+        Me.LoadWeights_Button.Enabled = False
+        Me.LoadWeights_Button.Location = New System.Drawing.Point(387, 336)
+        Me.LoadWeights_Button.Name = "LoadWeights_Button"
+        Me.LoadWeights_Button.Size = New System.Drawing.Size(83, 23)
+        Me.LoadWeights_Button.TabIndex = 24
+        Me.LoadWeights_Button.Text = "Load Weights"
+        Me.LoadWeights_Button.UseVisualStyleBackColor = True
+        '
+        'CustomResults_ListBox
+        '
+        Me.CustomResults_ListBox.FormattingEnabled = True
+        Me.CustomResults_ListBox.HorizontalScrollbar = True
+        Me.CustomResults_ListBox.Location = New System.Drawing.Point(298, 13)
+        Me.CustomResults_ListBox.Name = "CustomResults_ListBox"
+        Me.CustomResults_ListBox.Size = New System.Drawing.Size(387, 316)
+        Me.CustomResults_ListBox.TabIndex = 25
+        '
+        'CreateCustom_Button
+        '
+        Me.CreateCustom_Button.Location = New System.Drawing.Point(202, 12)
+        Me.CreateCustom_Button.Name = "CreateCustom_Button"
+        Me.CreateCustom_Button.Size = New System.Drawing.Size(90, 23)
+        Me.CreateCustom_Button.TabIndex = 26
+        Me.CreateCustom_Button.Text = "Create Custom"
+        Me.CreateCustom_Button.UseVisualStyleBackColor = True
+        '
         'NeuralNetwork
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(698, 412)
+        Me.Controls.Add(Me.CreateCustom_Button)
+        Me.Controls.Add(Me.CustomResults_ListBox)
+        Me.Controls.Add(Me.LoadWeights_Button)
+        Me.Controls.Add(Me.SaveWeights_Button)
         Me.Controls.Add(Me.Reset_Button)
         Me.Controls.Add(Me.HiddenNeuronNum_Label)
         Me.Controls.Add(Me.HiddenNeurons_Label)
@@ -309,7 +355,7 @@ Partial Class NeuralNetwork
         Me.Controls.Add(Me.Templates_ComboBox)
         Me.Controls.Add(Me.Result_PictureBox)
         Me.Name = "NeuralNetwork"
-        Me.Text = "Form1"
+        Me.Text = "Neural Network"
         CType(Me.Result_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Epochs_TrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LearningRate_TrackBar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -343,4 +389,8 @@ Partial Class NeuralNetwork
     Friend WithEvents HiddenNeurons_Label As Label
     Friend WithEvents HiddenNeurons_TrackBar As TrackBar
     Friend WithEvents Reset_Button As Button
+    Friend WithEvents SaveWeights_Button As Button
+    Friend WithEvents LoadWeights_Button As Button
+    Friend WithEvents CustomResults_ListBox As ListBox
+    Friend WithEvents CreateCustom_Button As Button
 End Class
